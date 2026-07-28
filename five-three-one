@@ -1,4 +1,4 @@
-;;; 531.el --- Generate 5/3/1 training plan and store training data.  -*- lexical-binding: t; -*-
+;;; five-three-one.el --- Generate 5/3/1 training plan and store training data.  -*- lexical-binding: t; -*-
 
 (defvar 5/3/1-db-file "531.db"
   "Database file name.")
@@ -197,5 +197,5 @@ Reps3 INT)"
     (dolist (row result)
       (insert (format "%s\n" row)))))
 
-(provide '5/3/1)
+(provide 'five-three-one)
 ;;; 531.el ends here
