@@ -195,7 +195,7 @@ Reps3 INT)"
   (let* ((db (5/3/1--get-db))
          (result (sqlite-select db (format "SELECT * FROM \"%s\" LIMIT %d" lift max))))
     (dolist (row result)
-      (insert (format "%s" row)))))
+      (insert (format "%s\n" row)))))
 
 (provide '5/3/1)
 ;;; 531.el ends here
